@@ -1,11 +1,8 @@
-import { createContext, useEffect, useState } from "react"
-import React from 'react'
+import { createContext, useState } from "react"
 import { PersonDetails } from "./schema structure/Schema";
 import Home from "./components/body/Home";
-import Nav from "./components/header/Nav";
-import { Link ,BrowserRouter ,Routes ,Route} from 'react-router-dom';
+import { BrowserRouter ,Routes ,Route} from 'react-router-dom';
 import Requestrecived from "./components/body/Requsetrecived";
-import useFetch from "./components/hook/Usefetch";
 import Friendlist from "./components/body/Friendlist";
 import Auth from "./components/auth/Auth";
 import {ProjLayout} from "./components/ProjLayout";

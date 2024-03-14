@@ -26,7 +26,7 @@ export default function Login() {
 	const [errormsg,setmsg]=useState('')
 
 	const {setuser_id}=React.useContext(username_context)
-	const [logwithemail,setlogwithemail]=React.useState(false)
+	// const [logwithemail,setlogwithemail]=React.useState(false)
 	
 
 	function apilogin(){

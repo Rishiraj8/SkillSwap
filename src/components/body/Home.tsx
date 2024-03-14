@@ -1,14 +1,12 @@
-import React, { Suspense, useEffect } from 'react'
+import React, {  useEffect } from 'react'
 import { userContext,username_context } from '../../App'
 import Chart from './Chart'
 import useFetch from '../hook/Usefetch'
-import { Link, useNavigate } from 'react-router-dom'
+import {  useNavigate } from 'react-router-dom'
 import Loader from '../Loader/Loader'
-import Errorpage from '../Errorpop/Errorpage'
-import { Navigate } from 'react-router-dom'
 
 
-const array: number[] = [1,2,4,5,6,7,8,9,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
+
 
 export default function Home() {
   const nav =useNavigate()
@@ -43,7 +41,7 @@ console.log(Persons,"asdf");
 
         loading ?//array.map((item,index)=> <Loader key={index}/>)
            <div className='flex flex-col h-screen justify-center items-center'><Loader/></div> :  
-        filterPerson?.map((person, index) => (
+        filterPerson?.map((person) => (
          <Chart name={person.username} rating={person.rating} skills={person.skill_name} skill_id={person.skill_id}  receiver_id={person.user_id}    /> ))
 
 }

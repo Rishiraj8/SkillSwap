@@ -3,7 +3,7 @@ import { Signin } from '../../schema structure/Schema';
 import Errorpop from '../Errorpop/Errorpop';
 import { username_context } from '../../App';
 import { useNavigate } from 'react-router-dom';
-import { changencomponent } from '../hook/changencomponent';
+
 
 export default function Signup() {
 	const navigate =useNavigate();

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+
 import { PersonDetailsProps } from '../../schema structure/Schema';
 import { sendRequest } from '../../schema structure/Schema';
-import { userContext,username_context } from '../../App'
+import { username_context } from '../../App'
 
 import {CircleUser } from 'lucide-react'
 

@@ -1,16 +1,15 @@
-import React, { useState, useContext, useEffect } from 'react'
+import { useState, useContext, useEffect } from 'react'
 import { userContext } from '../../App';
 import { Link } from 'react-router-dom';
 import useFetch from '../hook/Usefetch';
-import { ArrowLeftRight, CircleUser, CircleUserRound, Filter, FolderOpenDot, ListTree, LogIn, LogOut, Menu } from 'lucide-react';
-import Login from '../auth/Login';
+import { ArrowLeftRight,  LogIn, LogOut, Menu } from 'lucide-react';
+
 import { useNavigate } from 'react-router-dom';
 import { username_context } from '../../App';
-import Home from '../body/Home';
 
 
 
-const skillsOptions = ["React", "Node", "MongoDB", "Angular", "Express", "MySQL", "Vue", "Django", "PostgreSQL"];
+
 type skill_type = {
 	skill_id: string;
 	name: string;
@@ -26,7 +25,7 @@ export default function Nav() {
 
 
 	const { selectedSkill, setSelectedSkill } = useContext(userContext);
-	const { searchPerson, setSearchPerson } = useContext(userContext);
+	const { setSearchPerson } = useContext(userContext);
 	// const { Persons, filterPerson } = useContext(userContext);
 	// console.log(searchPerson)
 	const { data } = useFetch({ url: 'https://skill-api.penneithendral.workers.dev/getskills' })

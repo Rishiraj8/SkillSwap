@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react'
-import ReqChart from './ReqChart'
-import { Link } from 'react-router-dom'
+import React from 'react'
+
 import Usefetch from '../hook/Usefetch'
 import { Requsetrecived } from '../../schema structure/Schema'
 import { username_context } from '../../App'

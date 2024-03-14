@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 
 const CardList = () => {
   const [position, setPosition] = useState(0);
 
   const moveLeft = () => {
+    console.log(position)
     setPosition((prevPos) => prevPos - 1);
   };
 

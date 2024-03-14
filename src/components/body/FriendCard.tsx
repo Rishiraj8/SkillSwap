@@ -21,7 +21,7 @@ type send = {
 export default function ReqChart({ name, skill, skill_id, requester_id }: Requst) {
 	const [rating, setrating] = useState(0)
 
-	const [Loader, setLoder] = useState(true)
+	
 
 	const [remove, setremove] = useState(false)
 

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import useFetch from '../hook/Usefetch'
 import { SendHorizontal } from 'lucide-react';
 import { username_context } from '../../App'
-import { Navigate, useNavigate } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 
 
 
